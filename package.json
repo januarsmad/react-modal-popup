@@ -1,5 +1,5 @@
 {
-  "name": "react-portal-modal",
+  "name": "react-modal-popup",
   "version": "0.1.0",
   "description": "React modal popup component built with react-portal",
   "main": "./dist/cjs/index.js",
