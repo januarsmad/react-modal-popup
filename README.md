@@ -1,1 +1,1 @@
-# react-portal-modal
+# react-modal-popup

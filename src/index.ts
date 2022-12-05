@@ -1,3 +1,3 @@
-import MyCounter from './components/app'
+import ModalPopup from './components/app'
 
-export { MyCounter }
+export { ModalPopup }
