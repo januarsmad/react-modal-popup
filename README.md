@@ -3,13 +3,13 @@
 ## Installation:
 
 ```bash
-npm install my-react-typescript-package --save-dev
+npm install --save react-modal-popup
 ```
 
 or
 
 ```bash
-yarn add -D my-react-typescript-package
+yarn add react-modal-popup
 ```
 
 ## Usage :
