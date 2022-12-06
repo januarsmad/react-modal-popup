@@ -1,6 +1,6 @@
 {
   "name": "react-modal-popup",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "React modal popup component built with react-portal",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -51,7 +51,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/januarsmad/react-portal-modal.git"
+    "url": "git+https://github.com/januarsmad/react-modal-popup.git"
   },
   "peerDependencies": {
     "react": ">=16"

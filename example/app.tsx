@@ -1,20 +1,23 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
-import { ModalPopup } from '../src/index'
+import { ModalPopup } from '../src/index';
 
 const ExampleApp = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
-  const handleShowModal = () => setIsOpen(!isOpen)
+  const handleShowModal = () => setIsOpen(!isOpen);
 
   return (
     <div>
       <button onClick={ handleShowModal }>Open Modal</button>
-      <ModalPopup isOpen={ isOpen } onCloseModal={ handleShowModal }>
+      <ModalPopup
+        isOpen={ isOpen }
+        onCloseModal={ handleShowModal }
+      >
         <h1>Modal</h1>
       </ModalPopup>
     </div>
-  )
-}
+  );
+};
 
-export default ExampleApp
+export default ExampleApp;
