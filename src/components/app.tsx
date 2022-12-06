@@ -58,10 +58,10 @@ const Modal = ({ children, isOpen, portalId = 'modal-portal', modalContentClassN
   };
 
   return (
-    <ReactPortal portalId={ portalId }>
-      <div id='modal-wrapper' className='modal-wrapper' onClick={ onClickOutside }>
-        <div id='modal-content' className={ 'modal-content ' + modalContentClassName }>
-          { children }
+    <ReactPortal portalId={portalId}>
+      <div id='modal-wrapper' className='modal-wrapper' onClick={onClickOutside}>
+        <div id='modal-content' className={'modal-content ' + modalContentClassName}>
+          {children}
         </div>
       </div>
     </ReactPortal>
