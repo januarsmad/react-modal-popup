@@ -4,22 +4,15 @@ import ReactPortal from '../helpers/react-portal';
 import './style.css';
 
 type Props = {
-  children?: JSX.Element[] | JSX.Element
-  isOpen: boolean
-  portalId?: string
-  modalContentClassName?: string
-  blurBackdrop?: boolean
-  onCloseModal: () => void
-}
+  children?: JSX.Element[] | JSX.Element;
+  isOpen: boolean;
+  portalId?: string;
+  modalContentClassName?: string;
+  blurBackdrop?: boolean;
+  onCloseModal: () => void;
+};
 
-const Modal = ({
-  children,
-  isOpen,
-  portalId = 'modal-portal',
-  modalContentClassName = '',
-  onCloseModal,
-}: Props) => {
-
+const Modal = ({ children, isOpen, portalId = 'modal-portal', modalContentClassName = '', onCloseModal }: Props) => {
   useEffect(() => {
     const closeOnEscapeKey = (e: any) => (e.key === 'Escape' ? onCloseModal() : null);
 
@@ -37,7 +30,6 @@ const Modal = ({
     const modalContent = document.getElementById('modal-content');
 
     if (modalWrapper?.style) {
-
       if (isOpen) {
         modalWrapper.style.display = 'flex';
         timeout = setTimeout(() => {
@@ -68,7 +60,9 @@ const Modal = ({
   return (
     <ReactPortal portalId={ portalId }>
       <div id='modal-wrapper' className='modal-wrapper' onClick={ onClickOutside }>
-        <div id='modal-content' className={ 'modal-content ' + modalContentClassName }>{ children }</div>
+        <div id='modal-content' className={ 'modal-content ' + modalContentClassName }>
+          { children }
+        </div>
       </div>
     </ReactPortal>
   );
