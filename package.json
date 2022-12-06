@@ -61,7 +61,5 @@
     "LICENSE",
     "README.md"
   ],
-  "dependencies": {
-    "react-transition-group": "^4.4.5"
-  }
+  "dependencies": {}
 }
