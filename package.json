@@ -1,6 +1,6 @@
 {
   "name": "react-modal-popup",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "React modal popup component built with react-portal",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -47,6 +47,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "ts-jest": "^29.0.3",
+    "tslib": "^2.4.1",
     "typescript": "^4.9.3"
   },
   "repository": {

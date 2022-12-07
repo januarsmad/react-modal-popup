@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { ModalPopup } from '../src/index';
+import ModalPopup from '../src/index';
 
 const ExampleApp = () => {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,3 +1,3 @@
 import ModalPopup from './components/app';
 
-export { ModalPopup };
+export default ModalPopup;
