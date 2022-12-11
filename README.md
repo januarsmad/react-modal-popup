@@ -1,5 +1,7 @@
 # react-modal-popup
 
+Simple and lightweight modal popup component.
+
 ## Installation:
 
 ```bash

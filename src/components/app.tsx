@@ -18,6 +18,7 @@ const Modal = ({
   modalContentClassName = '',
   onCloseModal
 }: Props) => {
+
   const [styles, setStyles] = useState<any>({
     modalWrapper: {
       position: 'fixed',
@@ -32,6 +33,7 @@ const Modal = ({
       transition: 'all 0.3s ease-in-out',
     },
     modalContent: {
+      position: 'relative',
       padding: '20px',
       width: 'fitContent',
       borderRadius: '5px',
@@ -42,15 +44,16 @@ const Modal = ({
       transform: 'translate(0, 100px)',
     },
   });
+
   useEffect(() => {
-    const closeOnEscapeKey = (e: any) => (e.key === 'Escape' ? onCloseModal() : null);
+    const closeOnEscapeKey = (e: any) => (e.key === 'Escape' ? isOpen && onCloseModal() : null);
 
     document.body.addEventListener('keydown', closeOnEscapeKey);
 
     return () => {
       document.body.removeEventListener('keydown', closeOnEscapeKey);
     };
-  }, [onCloseModal]);
+  }, [onCloseModal, isOpen]);
 
   useEffect(() => {
     let timeout: ReturnType<typeof setTimeout>;
